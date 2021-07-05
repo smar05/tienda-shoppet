@@ -1,0 +1,152 @@
+<!-- Analytics -->
+<!-- Analytics -->
+<!-- Google Analytics -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PFK425"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PFK425');</script>
+    <!-- End Google Tag Manager -->
+    <!-- /Google Analytics -->
+    <!-- /Analytics -->
+    
+    <!-- /Analytics -->
+
+    <section class="menu cid-rGsqBtahAB" once="menu" id="menu1-18">
+
+
+
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand" (click)="back()">
+                    <span class="navbar-logo">
+                        <div>
+                            <img src="assets/images/logo2.png" title="" style="height: 3rem;">
+                        </div>
+                    </span>
+                    <span class="navbar-caption-wrap"><div class="navbar-caption text-black display-5"
+                            >ShopPet</div></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+    
+    <section class="form cid-rGtD9lORNS" id="form1-3l">
+        
+        
+        <div class="container">
+            <h1 style="text-align: center;">
+                <b>Datos para el pedido</b>
+            </h1>
+            <div class="row">                    
+    
+                <div class="col-lg-6 mx-auto mbr-form" data-form-type="formoid">
+                    <!--Formbuilder Form-->
+                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="DK7gYmylyU+G9JOJagVL2kOrLAyb7mRGKQTMagq8S061KdOQXiR92KuodTu97WUiV/+rbGKWsGpFwHqLs2Vtmrm31IDZdxIUG+6ftKhRElZGeskMp6OhAjO1dYJfxz0T.C0F8D1c25gaQ4lEmqCVMRhs4h5rNXV6fw/FzU9HIDvE6km/TRv+Zm4ULD0YiX1GQk4Llre6LRPBy8LiAQwrLhEVYQp232pR55rJxNIvx/dezVpGnNO1Jf67T6LYrXoG8">
+                        <div class="form-row">
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
+                                out
+                                the form!</div>
+                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some
+                                problem!</div>
+                        </div>
+                        <div class="dragArea form-row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="nameFirst">
+                                <input type="text" name="nameFirst" placeholder="Nombre" data-form-field="nameFirst" class="form-control display-7" [(ngModel)]="datos.nombre" id="nameFirst-form1-3l">
+                            </div>                            
+                            <div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <input type="number" name="phone" placeholder="Celular" data-form-field="phone" class="form-control display-7" [(ngModel)]="whatsapp" id="phone-form1-3l">
+                            </div>
+                            <div data-for="email" class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <input type="email" name="email" placeholder="Correo" data-form-field="email" class="form-control display-7" [(ngModel)]="datos.correo" id="email-form1-3l">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 form-group" data-for="text2">
+                                <input type="text" name="Departamento" placeholder="Departamento" data-form-field="text" class="form-control display-7" [(ngModel)]="datos.departamento" id="text2-form1-3l">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 form-group" data-for="text2">
+                                <input type="text" name="ciudad" placeholder="Ciudad" data-form-field="text" class="form-control display-7" [(ngModel)]="datos.ciudad" id="text2-form1-3l">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="text2">
+                                <input type="text" name="direccion" placeholder="Direccion" data-form-field="text" class="form-control display-7" [(ngModel)]="datos.direccion" id="text2-form1-3l">
+                            </div>                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="textarea">
+                                <textarea name="nota" placeholder="Nota del pedido" data-form-field="textarea" class="form-control display-7" [(ngModel)]="datos.nota" id="textarea-form1-3l"></textarea>
+                            </div>
+                            <div class="col-auto" style="text-align: center;" *ngIf="total > 0">
+                                <h2><b>Total: {{total | currency:'$':true:'1.0-0'}}</b></h2>
+                            </div>                           
+                            <br> 
+                            <br>
+                            <div class="col-auto" *ngIf="indicativo && whatsapp && datos.nombre">
+                                <button type="submit" class="btn btn-primary display-7" (click)="enviarPedido()">Solicitar pedido</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--Formbuilder Form-->
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <section class="cid-rGtDepSvnU" id="clients1-3m">        
+        
+        <!-- Block parameters controls (Blue "Gear" panel) -->
+        
+        <!-- End block parameters -->
+        <div class="container images-container">
+            <div class="row justify-content-center">
+    
+    
+                <div class="col-md-12">
+    
+                    <h1 class="mbr-section-title mbr-bold pb-3 align-center mbr-fonts-style display-2">Productos añadidos</h1>
+                    
+                    <ng-container *ngFor="let producto of carrito;let i=index">
+                        <div class="card" style="width: 18rem;" style="background-color:#cfcfcf;margin: 5%;border: 1px solid #666;" *ngIf="!((producto.id == 0)||(producto.id == null)||(producto.id == undefined))">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>{{i+1}}.{{producto.nombre}}</b></h5>
+                              <h6 class="card-subtitle mb-2 text-muted" *ngIf="producto.caracteristica">
+                                <b>Caracteristica: {{producto.variantesOp}} {{producto.caracteristica}}</b>
+                              </h6>
+                              <p class="card-text">
+                                <b>Precio unitario:</b> {{producto.precio | currency:'$':true:'1.0-0'}}
+                                <br>
+                                <b>Cantidad:</b> {{producto.cantidad}}
+                              </p>
+                              <a class="card-link" style="color:#ff6f1c" (click)="modCarrito(i)"><b>Modificar</b></a>
+                              <a class="card-link" style="color:#ff6f1c" (click)="delete(producto.id)"><b>Eliminar</b></a>
+                            </div>
+                        </div>
+                    </ng-container>                    
+                    
+                </div>
+    
+    
+    
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="cid-rGsJ0Syn9D" id="footer1-19">
+    
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="col-12">
+                    <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    

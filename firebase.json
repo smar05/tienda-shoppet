@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "shoppet",
+    "public": "dist/shoppet",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
